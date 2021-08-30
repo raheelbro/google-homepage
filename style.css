@@ -10,23 +10,69 @@ body {
   flex-direction: column;
 }
 
+header a {
+  text-decoration: none;
+
+  color: rgb(20, 20, 20);
+  font-weight: 200;
+}
+
 #nav-bar {
   display: flex;
   flex-direction: row;
   width: auto;
   height: auto;
   justify-content: space-between;
-  align-items: baseline;
-  margin: 15px;
+  margin: 12px;
 }
 
 .nav-elements {
   display: flex;
   flex-direction: row;
+  font-size: 10px;
+  padding: 4px;
+  letter-spacing: 0.4px;
 }
 
+#nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -10px;
+  padding-right: 10px;
+}
 li {
   padding: 5px;
+}
+
+header .material-icons {
+  color: rgb(120, 120, 120);
+  transform: scale(0.8);
+}
+
+header .material-icons:hover {
+  background-color: rgb(240, 240, 240);
+  border-radius: 100px;
+}
+
+#signin-button {
+  background-color: #4386f8;
+  background: rgb(67, 134, 248);
+  background: radial-gradient(
+    circle,
+    rgba(67, 134, 248, 1) 1%,
+    rgba(67, 134, 233, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 1.5px;
+  padding: 6px 10px 5px 10px;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+#google-img {
+  width: 218px;
 }
 
 #mic-img {
@@ -38,6 +84,60 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 101px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+#search-box {
+  width: 430px;
+  height: 33px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid rgb(220, 220, 220);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+  background: url(https://image.flaticon.com/icons/png/512/622/622669.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 13px;
+  padding-left: 35px;
+}
+
+#search-box:hover {
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.75);
+}
+#search-box:focus {
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.75);
+  outline: none;
+}
+
+#google-buttons-div {
+  margin-top: 13px;
+}
+
+.google-buttons {
+  background-color: #f4f4f4;
+  font-size: 11px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 8px 10px 8px 10px;
+  margin: 0px 8px 1px 8px;
+  border-radius: 4px;
+  border-bottom: rgba(244, 244, 244, 1);
+}
+
+.google-buttons:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
@@ -57,8 +157,17 @@ footer {
   flex-direction: row;
 }
 
-header a {
+footer ul li {
+  padding: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
-  font-weight: 200;
+  color: rgb(95, 99, 104);
+}
+
+a:hover {
+  text-decoration: underline;
 }

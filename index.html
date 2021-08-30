@@ -7,23 +7,24 @@
   <link rel="stylesheet" href="css-reset.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="shortcut icon" type="image/jpg" href="https://www.google.com/favicon.ico"/>
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Google</title>
 </head>
 <body>
   <!------------------------- nav ----------------------------->
   <header>
     <nav id="nav-bar">
-      <ul class="nav-elements">
-        <li><a href="">About</a> </li>
-        <li><a href="">Store</a></li>
+      <ul class="nav-elements" id="nav-left">
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Store</a></li>
       </ul>
 
-      <ul class="nav-elements">
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
-        <li><a href=""><span><i class="material-icons">apps</i></span></a></li>
-        <li><button>Sign in</button></li>
+      <ul class="nav-elements" id="nav-right">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#"><i class="material-icons">apps</i></a></li>
+        <li><button id="signin-button">Sign in</button></li>
       </ul>
     </nav>
   </header>
@@ -38,14 +39,14 @@
       </div>
       
       <form id="search-form" action="">
-        <span><i class="material-icons">search</i></span> 
-        <input type="text">
-        <img id="mic-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg" 
-        alt="Google Search by Voice Image">
+      <!--  <label for="seach-box"><i class="material-icons">search</i></label> -->
+        <input id="search-box" type="text">
+      <!--  <img id="mic-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg" 
+        alt="Google Search by Voice Image">  -->
       </form>
-      <div>
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+      <div id="google-buttons-div">
+        <a class="google-buttons" href="#">Google Search</a>
+        <a class="google-buttons" href="#">I'm Feeling Lucky</a>
       </div>
     </div>
   </main>
@@ -54,15 +55,15 @@
   <!------------------------ footer ---------------------------->
   <footer>
     <ul class="footer-elements">
-      <li><a href="">Advertising</a></li>
-      <li><a href="">Business</a></li>
-      <li><a href="">How Search Works</a></li>
+      <li><a href="#">Advertising</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">How Search works</a></li>
     </ul>
 
     <ul class="footer-elements">
-      <li><a href="">Privacy</a></li>
-      <li><a href="">Terms</a></li>
-      <li><a href="">Settings</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Settings</a></li>
     </ul>
   </footer>
 </body>
