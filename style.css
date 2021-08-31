@@ -112,10 +112,10 @@ form {
 }
 
 #search-box:hover {
-  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0px #ccc, 0px -1px 3px 0px #f0f0f0;
 }
 #search-box:focus {
-  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0px #ccc, 0px -1px 3px 0px #f1f1f1;
   outline: none;
 }
 
@@ -138,6 +138,11 @@ form {
 .google-buttons:hover {
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 0px 1px 0px #e4e4e4;
+}
+
+.google-buttons:focus {
+  border: 1px solid #4285f4;
 }
 
 footer {
@@ -170,4 +175,23 @@ footer a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  #search-box {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-elements {
+    padding: 5px 12px 5px 12px;
+  }
 }
